@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //REGEX VALIDATION
 
 const Register = () => {
-  return <div>Register</div>;
+  return <div>Register!</div>;
 };
 
 export default Register;
