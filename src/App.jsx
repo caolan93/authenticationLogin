@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./index.scss";
 
 //Components
-import Register from "./components/register";
+import Register from "./components/register.jsx";
 
 function App() {
   return (
