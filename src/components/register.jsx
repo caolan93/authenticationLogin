@@ -34,20 +34,13 @@ const Register = () => {
   }, []);
 
   useEffect(() => {
-    const result = USER_REGEX.test(user);
-    console.log(result);
-    console.log(user);
-    setValidName(result);
+    setValidName(USER_REGEX.test(user));
   }, [user]);
 
   useEffect(() => {
-    const result = PWD_REGEX.test(pwd);
-    console.log(result);
-    console.log(pwd);
-    setValidPwd(pwd);
-    const match = pwd === matchPwd;
-    setValidMatch(match);
-  }, [user, matchPwd]);
+    setValidPwd(PWD_REGEX.test(pwd));
+    setValidMatch(pwd === matchPwd);
+  }, [pwd, matchPwd]);
 
   useEffect(() => {
     setErrMsg("");
